@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../athl33t-ui/.idea/athl33t-ui.iml" filepath="$PROJECT_DIR$/../../athl33t-ui/.idea/athl33t-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/moto-toaster.iml" filepath="$PROJECT_DIR$/.idea/moto-toaster.iml" />
+    </modules>
+  </component>
+</project>
