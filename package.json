@@ -1,11 +1,12 @@
 {
-  "name": "@moto/toaster",
+  "name": "@kwuasimoto/toaster",
   "author": "Kwuasimoto",
   "version": "0.0.1",
   "description": "A super simple toaster for solidjs",
   "main": "src/index.ts",
-  "files": ["src/**/*"],
-  "private": true,
+  "files": [
+    "src/**/*"
+  ],
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -21,5 +22,13 @@
   },
   "dependencies": {
     "solid-js": "^1.7.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwuasimoto/moto-toaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kwuasimoto/moto-toaster/issues"
+  },
+  "homepage": "https://github.com/Kwuasimoto/moto-toaster#readme"
 }
