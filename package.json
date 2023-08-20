@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Simple toaster for SolidJS",
   "main": "src/index.ts",
+  "private": "false",
   "files": [
     "src/**/*"
   ],
