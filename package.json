@@ -1,10 +1,11 @@
 {
   "name": "moto-toaster",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Simple toaster for SolidJS",
   "main": "src/index.ts",
   "files": [
-    "src/**/*"
+    "src/**/*",
+    "types.d.ts"
   ],
   "devDependencies": {
     "typescript": "^5.1.3"
