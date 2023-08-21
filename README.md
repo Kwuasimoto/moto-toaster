@@ -10,9 +10,9 @@ I'll get around to implementing it sometime soon likely. </br>
 
 ### All Components Included
 ```
-./src/Toast.tsx </br> 
-./src/Toaster.tsx </br>
-./src/toaster.service.ts </br>
+./src/Toast.tsx
+./src/Toaster.tsx
+./src/toaster.service.ts
 ./src/toaster.state.ts
 ```
 ___
@@ -66,7 +66,7 @@ export const AnyComponent: Component<ComponentProps<any>> = () => {
     toasterState.removeToast("registration-toast");
   });
   
-  const useRegistrationToast = () => {
+  const useToast = () => {
     toasterService.useToast([
       {
         // Properties for the <Toast/> element in the Toaster.
