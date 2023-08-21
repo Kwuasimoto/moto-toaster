@@ -3,7 +3,7 @@ import { ToastProps } from "../types";
 
 export const Toast: Component<ToastProps> = (props) => {
   return (
-    <div {...props} class={props.class + " pointer-events-auto"}>
+    <div {...props} class={props.class} style={"pointer-events: auto;"}>
       {props.children}
     </div>
   );
