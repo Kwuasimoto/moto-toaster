@@ -15,8 +15,10 @@ export const Toaster: Component<any> = (props) => {
   return (
     <>
       <div
+        id={"moto-toaster"}
         ref={setToaster}
         class="pointer-events-none absolute inset-0 flex h-full w-full flex-col"
+        style={"pointer-events: none; position:absolute; inset: 0; display:flex; height: 100%; width: 100%; flex-direction: column"}
       >
         <For each={toasterState.toasts}>
           {(item) => {
