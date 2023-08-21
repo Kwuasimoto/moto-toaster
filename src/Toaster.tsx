@@ -3,7 +3,7 @@ import { Toast } from "./Toast";
 import { toasterService } from "./toaster.service";
 import { toasterState } from "./toaster.state";
 
-export const Toaster: Component<any> = (props) => {
+export const Toaster: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) => {
   const [toaster, setToaster] = createSignal<JSX.Element>();
 
   createEffect(() => {
@@ -18,7 +18,8 @@ export const Toaster: Component<any> = (props) => {
         id={props.id || "moto-toaster"}
         ref={setToaster}
         class={props.class}
-        style={"pointer-events: none; position:absolute; inset: 0; display:flex; height: 100%; width: 100%; flex-direction: column"}
+        style={"pointer-events: none; position: absolute; inset: 0; display: flex; height: 100%; width: 100%; flex-direction: column"}
+        {...props}
       >
         <For each={toasterState.toasts}>
           {(item) => {
@@ -37,6 +38,7 @@ export const Toaster: Component<any> = (props) => {
                   if (item.onClickOffClose && e.target === e.currentTarget)
                     toasterService.removeToast(toastRef);
                 }}
+                {...item.props}
               >
                 {item.render(toastRef)}
               </Toast>

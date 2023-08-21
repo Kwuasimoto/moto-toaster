@@ -24,6 +24,7 @@ export type Toast = JSX.HTMLAttributes<any> & {
   id: string;
   render: (ref: Accessor<JSX.Element>) => JSX.Element;
   ref?: Accessor<JSX.Element>;
+  props?: JSX.HTMLAttributes<HTMLDivElement>
   onClickOffClose?: boolean;
   onClickOff?: () => void;
   duration?: number;

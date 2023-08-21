@@ -14,7 +14,6 @@ const [toasterService] = createStore<ToasterService>({
         toasterState.setToast(toast);
         return;
       }
-
       if (toasterState.toasts.every((item) => item.id !== toast.id)) {
         toasterState.setToast(toast);
       }
