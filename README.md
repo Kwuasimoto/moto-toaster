@@ -3,7 +3,7 @@
 A simple, minimally styled SolidJS toaster that focuses on reactivity rather than targeting the dom.
 
 
-### Mental Notes:
+### Notes:
 Simultaneous toasters not supported, use one Toaster at a time. <br/>
 If you need multi toaster support, apply an ID to the Toaster and within the For, check for id before rendering toast. <br/>
 I'll get around to implementing it sometime soon likely. </br>
