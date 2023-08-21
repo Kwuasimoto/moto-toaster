@@ -1,6 +1,6 @@
 {
   "name": "moto-toaster",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple toaster for SolidJS",
   "main": "src/index.ts",
   "files": [
