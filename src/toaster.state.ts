@@ -2,10 +2,6 @@ import { createStore } from "solid-js/store";
 import { ToasterState, ToastRef } from "../types";
 import { Accessor } from "solid-js";
 
-/**
- * create - Adds toast to toaster overlay.
- * remove - removes toast by id.
- */
 const [toasterState, setToasterState] = createStore<ToasterState>({
   toasts: [],
   toastRefs: [],

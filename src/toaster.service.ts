@@ -2,6 +2,7 @@ import { Toast, ToasterService } from "../types";
 import { createStore } from "solid-js/store";
 import { toasterState } from "./toaster.state";
 
+
 const [toasterService] = createStore<ToasterService>({
   getToastRef: (accessor) => {
     const toastElement = <HTMLDivElement>accessor();
