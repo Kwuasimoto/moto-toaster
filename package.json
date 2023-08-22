@@ -1,6 +1,8 @@
 {
   "name": "moto-toaster",
-  "version": "0.0.8",
+  "author": "kwuasimoto",
+  "license": "AGPL-3.0-or-later",
+  "version": "0.0.9",
   "description": "Simple toaster for SolidJS",
   "main": "src/index.ts",
   "files": [
@@ -13,11 +15,6 @@
   "dependencies": {
     "solid-js": "^1.7.6"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "kwuasimoto",
-  "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kwuasimoto/moto-toaster.git"
