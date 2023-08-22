@@ -87,6 +87,66 @@ export const AnyComponent: Component<ComponentProps<any>> = () => {
 
 ```
 
+# Options
+
+## Toaster Element.
+
+
+## Toast Element.
+
+The toast element is the object passed into the array of the useToasts function.
+
+
+```typescript
+
+export type Toast = JSX.HTMLAttributes<any> & {
+  /**
+   * The id used to fetch the reference.
+   */
+  id: string;
+  /**
+   * renders a JSX.Element within a Toast Element in the Toaster(toaster.service.ts)
+   * @param ref the reference to the Toast element rendered within the toaster.
+   */
+  render: (ref: Accessor<JSX.Element>) => JSX.Element;
+  /**
+   * The direct reference to the HTMLDivElement,
+   *
+   * typable - <HTMLDivElement>ref()
+   */
+  ref?: Accessor<JSX.Element>;
+  /**
+   * The props passed to the Toast element in Toast['render'] function.
+   */
+  props?: JSX.HTMLAttributes<HTMLDivElement>
+  /**
+   * If user clicks off of toast, close the toast.
+   */
+  onClickOffClose?: boolean;
+  /**
+   * Event
+   */
+  onClickOff?: () => void;
+  /**
+   * the duration of the toast.
+   *
+   * if (duration <= 0) toast will not close.
+   */
+  duration?: number;
+  /**
+   * prepend - Places the toast at the left end of the toasts array.
+   * push - Places the toast to the right side of the toasts array.
+   */
+  insertionMethod?: ToastInsertionMethod;
+  /**
+   * Only allows one toast of each ID to be created at once.
+   */
+  unique?: boolean;
+};
+
+```
+
+
 
 
 
