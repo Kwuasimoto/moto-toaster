@@ -2,7 +2,7 @@
   "name": "moto-toaster",
   "author": "kwuasimoto",
   "license": "AGPL-3.0-or-later",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Simple toaster for SolidJS",
   "main": "src/index.ts",
   "files": [
