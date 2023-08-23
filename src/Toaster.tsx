@@ -15,11 +15,11 @@ export const Toaster: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) =>
   return (
     <>
       <div
+        {...props}
         id={props.id || "moto-toaster"}
         ref={setToaster}
         style={"pointer-events: none; position: absolute; inset: 0; display: flex; height: 100%; width: 100%; flex-direction: column"}
         class={props.class}
-        {...props}
       >
         <For each={toasterState.toasts}>
           {(item) => {
@@ -31,6 +31,7 @@ export const Toaster: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) =>
 
             return (
               <Toast
+                {...item.props}
                 ref={setToastRef}
                 id={item.id}
                 class={item.class}
@@ -38,7 +39,6 @@ export const Toaster: Component<JSX.HTMLAttributes<HTMLDivElement>> = (props) =>
                   if (item.onClickOffClose && e.target === e.currentTarget)
                     toasterService.removeToast(toastRef);
                 }}
-                {...item.props}
               >
                 {item.render(toastRef)}
               </Toast>
