@@ -2,7 +2,7 @@
   "name": "moto-toaster",
   "author": "kwuasimoto",
   "license": "AGPL-3.0-or-later",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple toaster for SolidJS",
   "main": "src/index.ts",
   "files": [
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Kwuasimoto/moto-toaster/issues"
   },
-  "homepage": "https://github.com/Kwuasimoto/moto-toaster#readme"
+  "homepage": "https://github.com/Kwuasimoto/moto-toaster#readme",
+  "keywords": [
+    "SolidJS",
+    "Toaster",
+    "Toast",
+    "Reactive"
+  ]
 }
