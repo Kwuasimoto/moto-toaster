@@ -97,17 +97,17 @@ export interface ToasterService {
   getToastRef: (
     accessor: Accessor<JSX.Element | undefined>
   ) => Accessor<ToastRef> | undefined;
+
   /**
    * Renders toasts reactively within the Toaster.
    * @param toasts an array of toasts that are rendered via the Toast['render'] function. These toasts are rendered within a <Toast> element. The properties of the objects passed to the array param in useToasts will be spread on the Toast element. And a ref will be forwarded for using other toaster functions with, or implementing your own logic.
    */
-
   useToast: (toasts: Toast[]) => Toast[];
+
   /**
    * Removes toast from toaster state.
    * @param toast
    */
-
   removeToast: (toast: Accessor<JSX.Element>) => boolean;
 }
 ```
