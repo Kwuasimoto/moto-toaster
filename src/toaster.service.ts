@@ -4,8 +4,8 @@ import { toasterState } from "./toaster.state";
 
 
 const [toasterService] = createStore<ToasterService>({
-  getToastRef: (accessor) => {
-    const toastElement = <HTMLDivElement>accessor();
+  getToastRef: (toast) => {
+    const toastElement = <HTMLDivElement>toast();
     return toasterState.getToastRef(toastElement.id);
   },
   useToast: (toasts): Toast[] => {

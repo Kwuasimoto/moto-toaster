@@ -4,9 +4,7 @@ A simple, minimally styled SolidJS toaster that focuses on reactivity rather tha
 
 ### Notes:
 
-Simultaneous toasters not supported, use one Toaster at a time. <br/>
-If you need multi toaster support, apply an ID to the Toaster and within the For, check for id before rendering toast. <br/>
-I'll get around to implementing it sometime soon likely. </br>
+Simultaneous toasters not supported, use one Toaster at a time. Will be implemented soon.<br/>
 
 ### All Components Included
 
@@ -88,9 +86,33 @@ export const AnyComponent: Component<ComponentProps<any>> = () => {
 
 # Options
 
-## [useToast]
+## ToasterService
 
-A function on toasterService that helps render
+```typescript
+export interface ToasterService {
+  /**
+   * Get a toastRef from toaster state.
+   * @param accessor The accessor associated with the ToasterRef.
+   */
+  getToastRef: (
+    accessor: Accessor<JSX.Element | undefined>
+  ) => Accessor<ToastRef> | undefined;
+  /**
+   * Renders toasts reactively within the Toaster.
+   * @param toasts an array of toasts that are rendered via the Toast['render'] function. These toasts are rendered within a <Toast> element. The properties of the objects passed to the array param in useToasts will be spread on the Toast element. And a ref will be forwarded for using other toaster functions with, or implementing your own logic.
+   */
+
+  useToast: (toasts: Toast[]) => Toast[];
+  /**
+   * Removes toast from toaster state.
+   * @param toast
+   */
+
+  removeToast: (toast: Accessor<JSX.Element>) => boolean;
+}
+```
+
+## Toast
 
 ```typescript
 export type Toast = JSX.HTMLAttributes<any> & {

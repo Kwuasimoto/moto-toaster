@@ -22,7 +22,7 @@ export interface ToasterState {
 
 export interface ToasterService {
   getToastRef: (
-    accessor: Accessor<JSX.Element | undefined>,
+    toast: Accessor<JSX.Element>,
   ) => Accessor<ToastRef> | undefined;
 
   useToast: (toasts: Toast[]) => Toast[];
